@@ -6,7 +6,7 @@ import pickle
 import json 
 import random
 import math
-config_path = "/home/afhuertas/data-science/master/thesis/finance/scripts/frankfurt_gym/envs/frankfurt_env_dir/config.json"
+config_path = "/kaggle/working/frank-env/envs/frankfurt_env_dir/config.json"
 
 
 def softmax(x, axis):
