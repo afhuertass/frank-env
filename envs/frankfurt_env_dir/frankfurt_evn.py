@@ -221,7 +221,7 @@ class FrankfurtEnv(gym.Env):
   def build_logreturns_stock( self, df , start_date , end_date   ):
     # df [ "date" , "Close"]
     #print( start_date , end_date )
-    new_index = pd.date_range( start = start_date ,  end= end_date , freq = "D" )
+    new_index = pd.date_range( start = start_date ,  end= end_date , freq = "D" , tz = "UTC" )
     self.date_index = new_index
     df["date"] = pd.to_datetime(df['date'])
     df = df.set_index( ["date"])
